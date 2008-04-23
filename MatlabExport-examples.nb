@@ -1,0 +1,352 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     12829,        343]
+NotebookOptionsPosition[     10612,        267]
+NotebookOutlinePosition[     11783,        306]
+CellTagsIndexPosition[     11534,        297]
+WindowFrame->Normal
+ContainsDynamic->False*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"<<", "MatlabExport`"}]], "Input",
+ CellChangeTimes->{{3.388366095904043*^9, 3.3883661256267824`*^9}, {
+  3.3883776835562687`*^9, 3.3883777077911167`*^9}, {3.4034924734083695`*^9, 
+  3.403492481840494*^9}, {3.403492574694011*^9, 3.4034925787798862`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"?", "MatlabExport"}], "\[IndentingNewLine]", 
+ RowBox[{"?", "MatlabShow"}], "\[IndentingNewLine]", 
+ RowBox[{"?", "MatlabSubs"}], "\[IndentingNewLine]", 
+ RowBox[{"?", "MatlabString"}], "\[IndentingNewLine]", 
+ RowBox[{"?", "matlabtranslations"}], "\[IndentingNewLine]", 
+ RowBox[{"?", "matlabsubs"}]}], "Input",
+ CellChangeTimes->{{3.388378148074213*^9, 3.3883781839558077`*^9}, {
+  3.3886977540650578`*^9, 3.3886977574098673`*^9}, {3.4034927474824686`*^9, 
+  3.4034927564253283`*^9}, {3.4034931783219852`*^9, 3.4034931809057007`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ StyleBox["\<\"MatlabExport[<expr>,<equals string>]:\\n     Saves the \
+Mathematica code <expr> to be converted to\\n     Matlab by `MatlabShow`. \
+<equals string> is the prepended\\n     Matlab variable to be used; if \
+omitted, the string form\\n     of <expr> is used instead. This is useful for \
+cases like\\n        x = Sqrt[y^2+z^2];\\n        MatlabExport[x]\\n  \"\>", 
+  "MSG"]], "Print", "PrintUsage",
+ CellChangeTimes->{3.40349300708576*^9},
+ CellTags->"Info3403530806-3078159"],
+
+Cell[BoxData[
+ StyleBox["\<\"MatlabShow:\\n     Prints out the list of Matlab translations \
+that have\\n     been stored by `ExportMatlab`.\"\>", "MSG"]], "Print", \
+"PrintUsage",
+ CellChangeTimes->{3.403493007286048*^9},
+ CellTags->"Info3403530807-8308707"],
+
+Cell[BoxData[
+ StyleBox["\<\"MatlabSubs[<expr>]:  \\n     Appends <expr> to the \
+`matlabsubs` list.\"\>", "MSG"]], "Print", "PrintUsage",
+ CellChangeTimes->{3.4034930075163794`*^9},
+ CellTags->"Info3403530807-6247123"],
+
+Cell[BoxData[
+ StyleBox["\<\"matlabtranslations (list):\\n     Internal list of expressions \
+to be converted to Matlab\\n     that is created by the `MatlabExport` \
+command. \\n     Converted to Matlab and printed by the `MatlabShow` command.\
+\"\>", "MSG"]], "Print", "PrintUsage",
+ CellChangeTimes->{3.4034930077467103`*^9},
+ CellTags->"Info3403530807-9944569"],
+
+Cell[BoxData[
+ StyleBox["\<\"matlabsubs (list):\\n     List of transformation rules to \
+apply to expressions \\n     before they are converted to Matlab form during \
+the\\n     execution of `MatlabExport`.\"\>", "MSG"]], "Print", "PrintUsage",
+ CellChangeTimes->{3.4034930080471425`*^9},
+ CellTags->"Info3403530807-1785989"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MatlabString", "[", 
+  RowBox[{
+   RowBox[{
+    SubscriptBox["x", "2"], "'"}], "[", "t", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.4034930105307136`*^9, 3.403493029337757*^9}, {
+  3.403493066541253*^9, 3.403493085919117*^9}}],
+
+Cell[BoxData["\<\"x2d1\"\>"], "Output",
+ CellChangeTimes->{{3.4034930142260275`*^9, 3.4034930301088657`*^9}, {
+  3.403493073781664*^9, 3.4034930864699087`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"matlabsubs", " ", ":=", " ", 
+  RowBox[{"{", "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{"MatlabSubs", "[", 
+  RowBox[{"\[Beta]", "\[Rule]", "\[Lambda]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"MatlabSubs", "[", 
+  RowBox[{
+   RowBox[{"\[Beta]", "\[Rule]", "\[Lambda]"}], ",", 
+   RowBox[{"\[Alpha]", "\[Rule]", "\[Nu]"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.3883767522871695`*^9, 3.388376763313024*^9}, {
+  3.3883783627428913`*^9, 3.3883783640047054`*^9}, {3.3883785634214525`*^9, 
+  3.3883785815875745`*^9}, {3.3883786666098304`*^9, 3.3883786712865553`*^9}, {
+  3.388379046135562*^9, 3.3883790465361376`*^9}, {3.38837914748129*^9, 
+  3.388379161831925*^9}, {3.4034927637158113`*^9, 3.40349276715075*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"\[Beta]", "\[Rule]", "\[Lambda]"}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.388378645118928*^9, 3.3883786723480816`*^9}, {
+   3.3883787579411583`*^9, 3.3883789006864157`*^9}, {3.3883789961837344`*^9, 
+   3.388379048118413*^9}, {3.388379081486394*^9, 3.388379082577963*^9}, {
+   3.388379113983122*^9, 3.388379163934949*^9}, 3.388379210441822*^9, 
+   3.3886972590532656`*^9, 3.388697465329877*^9, {3.388697605130901*^9, 
+   3.3886976536406546`*^9}, {3.388697692256181*^9, 3.388697708539595*^9}, 
+   3.3886977465142*^9, 3.3886978122487216`*^9, 3.4034927677516146`*^9, 
+   3.403492825975336*^9, 3.403492931827544*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\[Beta]", "\[Rule]", "\[Lambda]"}], ",", 
+     RowBox[{"\[Beta]", "\[Rule]", "\[Lambda]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\[Beta]", "\[Rule]", "\[Lambda]"}], ",", 
+     RowBox[{"\[Beta]", "\[Rule]", "\[Lambda]"}], ",", 
+     RowBox[{"\[Alpha]", "\[Rule]", "\[Nu]"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.388378645118928*^9, 3.3883786723480816`*^9}, {
+   3.3883787579411583`*^9, 3.3883789006864157`*^9}, {3.3883789961837344`*^9, 
+   3.388379048118413*^9}, {3.388379081486394*^9, 3.388379082577963*^9}, {
+   3.388379113983122*^9, 3.388379163934949*^9}, 3.388379210441822*^9, 
+   3.3886972590532656`*^9, 3.388697465329877*^9, {3.388697605130901*^9, 
+   3.3886976536406546`*^9}, {3.388697692256181*^9, 3.388697708539595*^9}, 
+   3.3886977465142*^9, 3.3886978122487216`*^9, 3.4034927677516146`*^9, 
+   3.403492825975336*^9, 3.4034929318375587`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"x", "=", 
+   RowBox[{"a", "+", 
+    SuperscriptBox["b", "2"], "+", "\[Alpha]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"y", "=", 
+   RowBox[{
+    SuperscriptBox["a", "2"], "+", "b", "+", "\[Chi]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"MatlabExport", "[", 
+  RowBox[{"x", ",", "\"\<x\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"MatlabExport", "[", 
+  RowBox[{"y", ",", "\"\<y\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"x", "=", 
+   RowBox[{
+    RowBox[{"2", "a"}], "+", 
+    SuperscriptBox["b", "2"], "+", "\[Beta]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"MatlabExport", "[", 
+  RowBox[{"x", ",", "\"\<x\>\""}], 
+  "]"}], "\[IndentingNewLine]", "MatlabShow"}], "Input",
+ CellChangeTimes->{{3.3883712688824205`*^9, 3.3883712812201614`*^9}, {
+  3.3883714342401934`*^9, 3.38837148145809*^9}, {3.3883735808468623`*^9, 
+  3.388373591181723*^9}, {3.388375247573498*^9, 3.3883752566265154`*^9}, {
+  3.3883754040184546`*^9, 3.3883754075535374`*^9}, {3.3883767125700593`*^9, 
+  3.3883767492327776`*^9}, {3.403492830201413*^9, 3.4034928410870657`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"x...\\n  =2.*a+b.^2+Lambda;\\n\"\>"], "Print",
+ CellChangeTimes->{
+  3.3883792117637234`*^9, 3.3886972601548495`*^9, 3.3886974664114323`*^9, 
+   3.388697552455157*^9, {3.3886975975900574`*^9, 3.388697656765147*^9}, {
+   3.3886976931975346`*^9, 3.3886977091204305`*^9}, 3.3886978131600323`*^9, {
+   3.403492841517685*^9, 3.4034928432601905`*^9}, 3.403492932778912*^9}],
+
+Cell[BoxData["\<\"y...\\n  =a.^2+b+Chi;\\n\"\>"], "Print",
+ CellChangeTimes->{
+  3.3883792117637234`*^9, 3.3886972601548495`*^9, 3.3886974664114323`*^9, 
+   3.388697552455157*^9, {3.3886975975900574`*^9, 3.388697656765147*^9}, {
+   3.3886976931975346`*^9, 3.3886977091204305`*^9}, 3.3886978131600323`*^9, {
+   3.403492841517685*^9, 3.4034928432601905`*^9}, 3.403492932788926*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"x", "=."}], "\[IndentingNewLine]", 
+ RowBox[{"y", "=."}], "\[IndentingNewLine]", 
+ RowBox[{"MatlabExport", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     SubscriptBox["x", "1"], "[", "t", "]"}], "+", "\[Alpha]"}], ",", 
+   "\"\<z\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"MatlabExport", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     SubscriptBox["x", "1"], "[", "t", "]"}], "+", "\[Kappa]"}], ",", 
+   "\"\<z\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"MatlabExport", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     SubscriptBox["x", "1"], "[", "t", "]"}], "+", "\[Alpha]"}], ",", 
+   "\"\<f\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"MatlabExport", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     SubscriptBox["k", "1"], "[", "t", "]"}], "+", "\[Beta]"}], ",", 
+   "\"\<y\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"MatlabExport", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     SubscriptBox["k", "1"], "[", "t", "]"}], "+", 
+    RowBox[{
+     SuperscriptBox["l", 
+      TagBox[
+       RowBox[{"(", "3", ")"}],
+       Derivative],
+      MultilineFunction->None], "[", "t", "]"}], "+", "t"}], ",", 
+   "\"\<y\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"MatlabShow", ";"}]}], "Input",
+ CellChangeTimes->{{3.3883818325422173`*^9, 3.388381832722477*^9}, {
+  3.388697670284587*^9, 3.388697670675149*^9}, {3.403492856919832*^9, 
+  3.4034928569598894`*^9}, {3.403492937916299*^9, 3.403492939568675*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"z...\\n  =Kappa+x1;\\n\"\>"], "Print",
+ CellChangeTimes->{{3.3883818002357635`*^9, 3.3883818243904963`*^9}, 
+   3.3886972622278304`*^9, 3.388697468344211*^9, {3.3886975228826337`*^9, 
+   3.3886975731348925`*^9}, {3.3886976200122995`*^9, 3.3886977100016975`*^9}, 
+   3.388697764389904*^9, 3.3886978143317165`*^9, 3.403492940379842*^9}],
+
+Cell[BoxData["\<\"f...\\n  =Nu+x1;\\n\"\>"], "Print",
+ CellChangeTimes->{{3.3883818002357635`*^9, 3.3883818243904963`*^9}, 
+   3.3886972622278304`*^9, 3.388697468344211*^9, {3.3886975228826337`*^9, 
+   3.3886975731348925`*^9}, {3.3886976200122995`*^9, 3.3886977100016975`*^9}, 
+   3.388697764389904*^9, 3.3886978143317165`*^9, 3.4034929403898563`*^9}],
+
+Cell[BoxData["\<\"y...\\n  =k1+ld3+t;\\n\"\>"], "Print",
+ CellChangeTimes->{{3.3883818002357635`*^9, 3.3883818243904963`*^9}, 
+   3.3886972622278304`*^9, 3.388697468344211*^9, {3.3886975228826337`*^9, 
+   3.3886975731348925`*^9}, {3.3886976200122995`*^9, 3.3886977100016975`*^9}, 
+   3.388697764389904*^9, 3.3886978143317165`*^9, 3.4034929404299135`*^9}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{625, 750},
+WindowMargins->{{41, Automatic}, {Automatic, 74}},
+WindowTitle->$CellContext`ExportMatlab`ExportMatlab`FullFileName,
+ShowSelection->True,
+FrontEndVersion->"6.0 for Mac OS X x86 (32-bit) (June 19, 2007)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3403530806-3078159"->{
+  Cell[1456, 42, 504, 8, 167, "Print",
+   CellTags->"Info3403530806-3078159"]},
+ "Info3403530807-8308707"->{
+  Cell[1963, 52, 259, 5, 76, "Print",
+   CellTags->"Info3403530807-8308707"]},
+ "Info3403530807-6247123"->{
+  Cell[2225, 59, 219, 4, 60, "Print",
+   CellTags->"Info3403530807-6247123"]},
+ "Info3403530807-9944569"->{
+  Cell[2447, 65, 365, 6, 95, "Print",
+   CellTags->"Info3403530807-9944569"]},
+ "Info3403530807-1785989"->{
+  Cell[2815, 73, 326, 5, 95, "Print",
+   CellTags->"Info3403530807-1785989"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3403530806-3078159", 10999, 279},
+ {"Info3403530807-8308707", 11108, 282},
+ {"Info3403530807-6247123", 11216, 285},
+ {"Info3403530807-9944569", 11324, 288},
+ {"Info3403530807-1785989", 11432, 291}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[568, 21, 277, 4, 27, "Input"],
+Cell[CellGroupData[{
+Cell[870, 29, 561, 9, 103, "Input"],
+Cell[CellGroupData[{
+Cell[1456, 42, 504, 8, 167, "Print",
+ CellTags->"Info3403530806-3078159"],
+Cell[1963, 52, 259, 5, 76, "Print",
+ CellTags->"Info3403530807-8308707"],
+Cell[2225, 59, 219, 4, 60, "Print",
+ CellTags->"Info3403530807-6247123"],
+Cell[2447, 65, 365, 6, 95, "Print",
+ CellTags->"Info3403530807-9944569"],
+Cell[2815, 73, 326, 5, 95, "Print",
+ CellTags->"Info3403530807-1785989"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3190, 84, 253, 6, 27, "Input"],
+Cell[3446, 92, 160, 2, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3643, 99, 738, 13, 58, "Input"],
+Cell[4384, 114, 677, 11, 27, "Output"],
+Cell[5064, 127, 970, 19, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6071, 151, 1136, 28, 129, "Input"],
+Cell[CellGroupData[{
+Cell[7232, 183, 385, 5, 51, "Print"],
+Cell[7620, 190, 379, 5, 51, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8048, 201, 1448, 42, 139, "Input"],
+Cell[CellGroupData[{
+Cell[9521, 247, 352, 4, 51, "Print"],
+Cell[9876, 253, 351, 4, 51, "Print"],
+Cell[10230, 259, 354, 4, 51, "Print"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

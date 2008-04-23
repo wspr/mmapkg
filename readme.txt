@@ -22,8 +22,17 @@ FixPolygons:
   default.
 
 MatlabExport:
-  A wrapper around the ToMatlab package that makes
-  things better.
+  A wrapper around the ToMatlab package that works
+  for Greek symbols and derivatives.
+
+EqualTicks:
+  A hopefully temporary package to work out some
+  problems between MathPSfrag and CustomTicks in
+  which tick marks become scaled by the aspect
+  ratio of the figure Ñ ugly! Also provides a 
+  couple of helper functions that I'll probably
+  keep in the future in a package of a different
+  name.
 
 That's it for now. Probably more in the future!
 
