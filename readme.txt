@@ -26,3 +26,5 @@ MatlabExport:
   things better.
 
 That's it for now. Probably more in the future!
+
+Will Robertson

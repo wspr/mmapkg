@@ -23,7 +23,7 @@
 (*its efficiency; it could be further optimised. Please send comments *)
 (*and suggestions to us at the email addresses below.*)
 (**)
-(*Copyright 2007\[Dash]2008*)
+(*Copyright 2007-2008*)
 (*Will Robertson		wspr 81 at "gee" mail dot com*)
 (*Michele Ceriotti	michele dot ceriotti at "gee" mail dot com*)
 (**)
@@ -117,6 +117,8 @@ cleanup[polylist_,ect_]:=(
 
 
 
+
+
 (* ::Text:: *)
 (*Makes up a list of the occurrences of vertices in polygon list:*)
 
@@ -167,6 +169,8 @@ cleanup[polylist_,ect_]:=(
 
 Module[{ri,rj,lvp,nvl,ncl,ppoly,vpoly},
 refine[{cl_,vl_},iv_,ect_]:=(
+
+
 
 
 
