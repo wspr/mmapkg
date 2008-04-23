@@ -21,4 +21,8 @@ FixPolygons:
   higher quality than Mathematica produces by
   default.
 
+MatlabExport:
+  A wrapper around the ToMatlab package that makes
+  things better.
+
 That's it for now. Probably more in the future!
