@@ -1,7 +1,9 @@
 ------
 MMAPKG
 
-This is a collection of small Mathematica packages for making my life easier. Along the way, some people have contributed code and ideas of their own and their help is acknowledged in the individual packages.
+This is a collection of small Mathematica packages for making my life 
+easier. Along the way, some people have contributed code and ideas of 
+their own and their help is acknowledged in the individual packages.
 
 ColorbarPlot:
   Emulates Matlab's colorbar, to an extent. Provides a 
