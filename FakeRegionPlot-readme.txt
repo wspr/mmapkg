@@ -2,7 +2,7 @@ ___________________
 FakeRegionPlot v0.2
 2 May 2008
 
-Creates a RegionPlot using contiguous, rather than overlapping, regions. This allows export to EPS directly without having transparent colours destroyed (or rather, made fully opaque) in the process. As well as being a fairly widely used graphics format (still) EPS export is required for LATEX documents (that aren't using pdfTeX to produce PDF files directly) and, in particular, the Johannes Gro§e's MathPSfrag package.
+Creates a RegionPlot using contiguous, rather than overlapping, regions. This allows export to EPS directly without having transparent colours destroyed (or rather, made fully opaque) in the process. As well as being a fairly widely used graphics format (still), EPS export is required for LATEX documents (that aren't using pdfTeX to produce PDF files directly) and, in particular, Johannes Gro§e's MathPSfrag package.
 
 An example/documentation notebook, FakeRegionPlot-example.nb, is distributed with this package. FakeRegionPlot has been written with and for Mathematica 6.0.x. 
 

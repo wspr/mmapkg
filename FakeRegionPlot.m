@@ -8,7 +8,7 @@
 (*FakeRegionPlot v0.2*)
 (*2 May 2008*)
 (**)
-(*Creates a RegionPlot using contiguous, rather than overlapping, regions. This allows export to EPS directly without having transparent colours destroyed (or rather, made fully opaque) in the process. As well as being a fairly widely used graphics format (still) EPS export is required for L AT EX documents (that aren't using pdfTeX to produce PDF files directly) and, in particular, the Johannes Gro\[SZ]e's MathPSfrag package.*)
+(*Creates a RegionPlot using contiguous, rather than overlapping, regions. This allows export to EPS directly without having transparent colours destroyed (or rather, made fully opaque) in the process. As well as being a fairly widely used graphics format (still), EPS export is required for L AT EX documents (that aren't using pdfTeX to produce PDF files directly) and, in particular, Johannes Gro\[SZ]e's MathPSfrag package.*)
 (**)
 (*An example/documentation notebook, FakeRegionPlot-example.nb, is distributed with this package. FakeRegionPlot has been written with and for Mathematica 6.0.x. *)
 (**)
@@ -173,6 +173,8 @@ FakeRegionPlot[reg_List,xx_List,yy_List,opts___] :=
 
 
 
+
+
 (* ::Subsection:: *)
 (*Option processing*)
 
@@ -251,6 +253,8 @@ FakeRegionPlot[reg_List,xx_List,yy_List,opts___] :=
 
 
 
+
+
 (* ::Subsubsection:: *)
 (*Regions*)
 
@@ -265,6 +269,8 @@ FakeRegionPlot[reg_List,xx_List,yy_List,opts___] :=
 
 
 
+
+
 (* ::Text:: *)
 (*All options that are applicable to RegionPlot are passed through. (This includes MaxRecusion.) But the assignments to PlotStyle and BoundaryStyle are already in effect.*)
 
@@ -272,6 +278,8 @@ FakeRegionPlot[reg_List,xx_List,yy_List,opts___] :=
       Evaluate@FilterRules[{opts},Options@RegionPlot]]&,
     {ListCombinations[reg,And,Not],
      MakeColors[cols,opa]}],
+
+
 
 
 
