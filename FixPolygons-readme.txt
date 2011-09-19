@@ -1,6 +1,6 @@
-----------------
-FixPolygons v0.2
-2008 Apr 22
+-----------------
+FixPolygons v0.2a
+2011 Sep 19
 
 This package provides a function of the same name to improve a 
 Contour or Region plot by removing all extraneous polygons. It
@@ -17,7 +17,7 @@ This function is now in its 4th incarnation in an effort to improve
 its efficiency; it could be further optimised. Please send comments 
 and suggestions to us at the email addresses below.
 
-Copyright 2007-2008
+Copyright 2007-2011
 Will Robertson		wspr 81 at "gee" mail dot com
 Michele Ceriotti	michele dot ceriotti at "gee" mail dot com
 
@@ -34,6 +34,12 @@ algorithm; nonetheless, the result slower than the release version of
 FixPolygons at the time; inspired, that attempt was likewise scratched 
 and a new and improved version was written that bested all others. It 
 is now the current version of FixPolygons.
+
+* v0.2a (2011/09/19)
+    - No code changes; the package (.m) file has been reorganised
+      to avoid having code split across blocks (which works fine
+      for reading in the package in code but breaks the "Run Package"
+      button).
 
 -------
 Licence
